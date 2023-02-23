@@ -1,5 +1,14 @@
-<script setup></script>
+<script>
+import TodoList from "@/components/TodoList.vue"
+export default {
+  components: {
+    TodoList
+  },
+};
+</script>
 
 <template>
-  <main></main>
+  <div>
+    <todo-list />
+  </div>
 </template>
