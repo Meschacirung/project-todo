@@ -1,6 +1,11 @@
 import { reactive } from 'vue'
 
 export const store = reactive({
+    projects : [
+        "Project One",
+        "Project Two",
+        "Project Three"
+    ],
     todoTitle : "",
     isActive: false,
     todoItems:[

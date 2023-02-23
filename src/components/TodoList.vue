@@ -1,22 +1,25 @@
 <script>
     import TodoItem from "@/components/TodoItem.vue"
     import NewTodoItem from "@/components/NewTodoItem.vue"
+    import ProjectFilter from "@/components/ProjectFilter.vue"
     import { store } from '../store.js'
 
     export default {
         components: {
             TodoItem,
-            NewTodoItem
+            NewTodoItem,
+            ProjectFilter
         },
         data(){
             return {
                 store
             }
-        }
+        },
     };
 </script>
 
 <template>
+    <project-filter />
     <div class="space-y-3 rounded-3xl bg-gray-100 border border-gray-300/30 p-3">
         <div class="flex justify-between items-center">
             <h1 class="text-lg font-bold text-gray-800 flex items-center gap-2">
